@@ -11,10 +11,10 @@ function App() {
           <a href="https://twitter.com/wolfmefive" target="_blank">
             {t("Twitter")}
           </a>
-
+        </li>
+        <li>
           <Link to={`/cv`}>CV</Link>
         </li>
-
         <li>
           <a href="https://github.com/lf444" target="_blank">
             github
