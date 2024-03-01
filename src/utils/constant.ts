@@ -1,7 +1,5 @@
-import shopify from "../assets/company/shopify.png";
-import tesla from "../assets/company/tesla.png";
-import starbucks from "../assets/company/starbucks.png";
-import { t } from "i18next";
+import sogeti from "../assets/company/sogeti.png";
+import docdoku from "../assets/company/docdoku.png";
 
 export type ExperienceType = {
   title: string;
@@ -14,11 +12,11 @@ export type ExperienceType = {
 
 export const experiences: ExperienceType[] = [
   {
-    title: `Full-Stack ${t("Developer")}`,
+    title: `Full-Stack React/ReactNative/Java Dev`,
     company_name: "DocDoku",
-    icon: starbucks,
+    icon: docdoku,
     iconBg: "#EEEEEE",
-    date: `${t("Month.March")} 2021 - ${t("Month.October")} 2022`,
+    date: `Mars 2021 - Octo 2022`,
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -27,11 +25,11 @@ export const experiences: ExperienceType[] = [
     ],
   },
   {
-    title: `Front-End ${t("Developer")}`,
+    title: `Front-End React.js Dev`,
     company_name: "Sogeti",
-    icon: tesla,
+    icon: sogeti,
     iconBg: "#EEEEEE",
-    date: `${t("Month.January")} 2023 - ${t("Month.November")} 2023`,
+    date: `Jan 2023 - Nov 2023`,
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -40,11 +38,11 @@ export const experiences: ExperienceType[] = [
     ],
   },
   {
-    title: `Full-Stack ${t("Developer")}`,
+    title: `Full-Stack React/Node.js Dev`,
     company_name: "Sogeti",
-    icon: shopify,
+    icon: sogeti,
     iconBg: "#EEEEEE",
-    date: `${t("Month.November")} 2023 - ${t("Month.March")} 2024`,
+    date: `Nov 2023 - Mar 2024`,
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
