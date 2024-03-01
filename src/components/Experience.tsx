@@ -5,9 +5,9 @@ import {
 /* import { motion } from "framer-motion"; */
 import "react-vertical-timeline-component/style.min.css";
 
-/* import { textVariant } from "../utils/motion"; */
 import { experiences, ExperienceType } from "../utils/constant";
 import SectionWrapper from "./SectionWrapper";
+import { motion } from "framer-motion";
 
 const ExperienceCard = ({ experience }: { experience: ExperienceType }) => {
   return (
@@ -52,16 +52,15 @@ const ExperienceCard = ({ experience }: { experience: ExperienceType }) => {
 
 const Experience = () => {
   return (
-    <>
-      {/*     <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+    <div className="sm:pb-16 pb-10">
+      <motion.div /* variants={textVariant()} */>
+        <h2
+          className={`font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}
+        >
+          Experience pro
         </h2>
       </motion.div>
- */}
+
       <div className="mt-4 flex flex-col">
         <VerticalTimeline lineColor="#86BBD8">
           {experiences.map((experience, index) => (
@@ -72,7 +71,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 
