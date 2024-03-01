@@ -16,7 +16,7 @@ export const experiences: ExperienceType[] = [
     company_name: "DocDoku",
     icon: docdoku,
     iconBg: "#EEEEEE",
-    date: `Mars 2021 - Octo 2022`,
+    date: `Mar 2021 - Oct 2022`,
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
