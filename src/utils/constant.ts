@@ -12,7 +12,7 @@ export type ExperienceType = {
 
 export const experiences: ExperienceType[] = [
   {
-    title: `Full-Stack React/ReactNative/Java Dev`,
+    title: `Full-Stack React/Java Dev`,
     company_name: "DocDoku",
     icon: docdoku,
     iconBg: "#EEEEEE",
@@ -25,7 +25,7 @@ export const experiences: ExperienceType[] = [
     ],
   },
   {
-    title: `Front-End React.js Dev`,
+    title: `Front-End React Dev`,
     company_name: "Sogeti",
     icon: sogeti,
     iconBg: "#EEEEEE",
