@@ -19,14 +19,15 @@ const router = createHashRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/cv",
-        element: <Cv />,
-      },
-      {
         path: "/projects",
         element: <div>TEST PROJECTS MAGIQUE</div>,
       },
     ],
+  },
+  {
+    path: "/cv",
+    element: <Cv />,
+    errorElement: <ErrorPage />,
   },
 ]);
 
