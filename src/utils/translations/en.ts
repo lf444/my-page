@@ -17,4 +17,8 @@ export const enTrad = {
   },
   Developer: "Developer",
   Twitter: "x, formerly twitter",
+  Title: {
+    "Frontend Developer": "Frontend Developer",
+    "Backend Developer": "Backend Developer",
+  },
 };
