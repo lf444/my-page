@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function GoBackButton() {
+export default function GoHomeButton() {
   const navigate = useNavigate();
 
   return (
@@ -9,7 +9,7 @@ export default function GoBackButton() {
         className=" p-4 bg-black color mt-4 ml-4 text-white	 rounded"
         type="button"
         onClick={() => {
-          navigate(-1);
+          navigate("/");
         }}
       >
         Retour

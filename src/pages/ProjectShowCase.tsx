@@ -1,10 +1,10 @@
 import Tabs from "../components/Tabs";
-import GoBackButton from "../components/GoBackButton";
+import GoHomeButton from "../components/GoHomeButton";
 
 const ProjectShowCase = () => {
   return (
     <div>
-      <GoBackButton />
+      <GoHomeButton />
       <Tabs />
     </div>
   );
