@@ -25,9 +25,9 @@ function App() {
             linkedin
           </a>
         </li>
-        <li>
+        {/*        <li>
           <Link to={`/projects`}>project showcase</Link>
-        </li>
+        </li> */}
         <li>lartin.fabien@gmail.com</li>
       </ul>
       <Outlet />
