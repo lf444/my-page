@@ -54,3 +54,22 @@ export const experiences: ExperienceType[] = [
     ],
   },
 ];
+
+export const services = [
+  {
+    title: "FullStack Developer",
+    /*     icon: web, */
+  },
+  {
+    title: "Backend Develope",
+    /*     icon: mobile, */
+  },
+  {
+    title: "Cloud Architect",
+    /*     icon: backend, */
+  },
+  {
+    title: "DevOps",
+    /*     icon: creator, */
+  },
+];
