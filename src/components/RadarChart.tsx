@@ -18,21 +18,49 @@ ChartJS.register(
   Legend
 );
 
-export const data = {
-  labels: ["Thing 1", "Thing 2", "Thing 3", "Thing 4", "Thing 5", "Thing 6"],
+const data = {
+  labels: [
+    "Leadership",
+    "Travail d'équipe",
+    "Communication",
+    "Expert",
+    "Architecture",
+    "Créativité",
+  ],
   datasets: [
     {
-      label: "# of Votes",
-      data: [2, 9, 3, 5, 2, 3],
+      label: "test",
+      data: [3.5, 3.5, 3, 4, 3, 1.5],
+      fill: true,
       backgroundColor: "rgba(255, 99, 132, 0.2)",
-      borderColor: "rgba(255, 99, 132, 1)",
-      borderWidth: 1,
+      borderColor: "rgb(255, 99, 132)",
+      pointBackgroundColor: "rgb(255, 99, 132)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgb(255, 99, 132)",
     },
   ],
 };
 
+const options = {
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+  scales: {
+    r: {
+      max: 5,
+      min: 0,
+      ticks: {
+        stepSize: 1,
+        display: false,
+      },
+    },
+  },
+};
 const RadarChart = () => {
-  return <Radar data={data} />;
+  return <Radar data={data} options={options} />;
 };
 
 export default RadarChart;
