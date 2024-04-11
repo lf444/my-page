@@ -22,9 +22,11 @@ const defaultOptions = {
 const ServiceCard = ({
   index,
   title /*  icon  */,
+  content,
 }: {
   index: number;
   title: string;
+  content: string[];
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -77,7 +79,7 @@ const ServiceCard = ({
             }}
           >
             <h3 className="text text-[20px] font-bold text-center">
-              Lipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              {content.join(", ")}
             </h3>
           </div>
         </motion.div>
@@ -103,7 +105,6 @@ const Skill = () => {
           ))}
         </div>
         <div className="w-3/6">
-          {" "}
           <RadarChart />
         </div>
       </div>

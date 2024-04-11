@@ -32,12 +32,12 @@ const data = {
       label: "test",
       data: [3.5, 3.5, 3, 4, 3, 1.5],
       fill: true,
-      backgroundColor: "rgba(255, 99, 132, 0.2)",
-      borderColor: "rgb(255, 99, 132)",
-      pointBackgroundColor: "rgb(255, 99, 132)",
+      backgroundColor: "rgba(134,187,216, 0.2)",
+      borderColor: "rgb(134,187,216)",
+      pointBackgroundColor: "rgb(134,187,216)",
       pointBorderColor: "#fff",
       pointHoverBackgroundColor: "#fff",
-      pointHoverBorderColor: "rgb(255, 99, 132)",
+      pointHoverBorderColor: "rgb(134,187,216)",
     },
   ],
 };
@@ -50,6 +50,11 @@ const options = {
   },
   scales: {
     r: {
+      pointLabels: {
+        font: {
+          size: 14,
+        },
+      },
       max: 5,
       min: 0,
       ticks: {

@@ -59,17 +59,21 @@ export const services = [
   {
     title: "Front end Developer",
     /*     icon: web, */
+    content: ["React", "Typescript", "JavaScript", "Remix", "Nextjs"],
   },
   {
     title: "Back end Developer",
     /*     icon: mobile, */
+    content: ["Nestjs", "Java", "Kafka", "PostgreSQL", "MongoDB"],
   },
   {
     title: "Mobile Developer",
     /*     icon: backend, */
+    content: ["React Native", "Expo", "Kotlin", "Xcode", "Android Studio"],
   },
   {
     title: "DevOps Cloud",
+    content: ["Docker", "Jenkins", "GitLab CI/CD", "AWS", "GCP", "Azure"],
     /*     icon: creator, */
   },
 ];
