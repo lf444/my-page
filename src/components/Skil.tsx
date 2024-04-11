@@ -5,6 +5,7 @@ import { fadeIn } from "../utils/motion";
 import { Tilt } from "react-tilt";
 import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
+import RadarChart from "./RadarChart";
 
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
@@ -101,7 +102,10 @@ const Skill = () => {
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
         </div>
-        <div className="w-3/6  debug"> </div>
+        <div className="w-3/6">
+          {" "}
+          <RadarChart />
+        </div>
       </div>
     </div>
   );
