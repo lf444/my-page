@@ -1,20 +1,22 @@
-import { t } from "i18next";
+import { BrowserRouter } from "react-router-dom";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Navbar from "./components/Navbar";
 
-import { Link, Outlet } from "react-router-dom";
-
+import Skill from "./components/Skil";
+import Works from "./components/Works";
 function App() {
   return (
-    <div className="pl-10 pt-5">
-      <h1 className="capitalize font-semibold text-xl	">fabien lartin</h1>
-      <ul className="list-disc underline">
+    <BrowserRouter>
+      <div className="pl-10 pt-5">
+        {/*
+ 
         <li>
           <a href="https://twitter.com/wolfmefive" target="_blank">
             {t("Twitter")}
           </a>
         </li>
-        <li>
-          <Link to={`/cv`}>CV</Link>
-        </li>
+      
         <li>
           <a href="https://github.com/lf444" target="_blank">
             github
@@ -25,13 +27,18 @@ function App() {
             linkedin
           </a>
         </li>
-        {/*        <li>
-          <Link to={`/projects`}>project showcase</Link>
-        </li> */}
+    
         <li>lartin.fabien@gmail.com</li>
-      </ul>
-      <Outlet />
-    </div>
+      */}
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+        </div>
+        <About />
+        <Experience />
+        <Skill />
+        <Works />
+      </div>
+    </BrowserRouter>
   );
 }
 

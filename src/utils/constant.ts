@@ -1,6 +1,11 @@
 import sogeti from "../assets/company/sogeti.png";
 import docdoku from "../assets/company/docdoku.png";
 
+import backend from "../assets/back-end.png";
+import cloudcomputing from "../assets/cloud-computing.png";
+import contenuweb from "../assets/contenu-web.png";
+import mobile from "../assets/developpement-dapplications.png";
+
 export type ExperienceType = {
   title: string;
   company_name: string;
@@ -58,22 +63,61 @@ export const experiences: ExperienceType[] = [
 export const services = [
   {
     title: "Front end Developer",
-    /*     icon: web, */
+    icon: contenuweb,
     content: ["React", "Typescript", "JavaScript", "Remix", "Nextjs"],
   },
   {
     title: "Back end Developer",
-    /*     icon: mobile, */
+    icon: mobile,
     content: ["Nestjs", "Java", "Kafka", "PostgreSQL", "MongoDB"],
   },
   {
     title: "Mobile Developer",
-    /*     icon: backend, */
+    icon: backend,
     content: ["React Native", "Expo", "Kotlin", "Xcode", "Android Studio"],
   },
   {
     title: "DevOps Cloud",
-    content: ["Docker", "Jenkins", "GitLab CI/CD", "AWS", "GCP", "Azure"],
-    /*     icon: creator, */
+    content: ["AWS", "GCP", "Azure", "Docker", "Jenkins", "GitLab CI/CD"],
+    icon: cloudcomputing,
+  },
+];
+
+export const projects = [
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://i.imgur.com/1O7h3dV.png",
+    source_code_link: "https://github.com/",
+  },
+];
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  { id: "skill", title: "skill" },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
   },
 ];

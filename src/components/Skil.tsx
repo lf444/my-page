@@ -21,11 +21,13 @@ const defaultOptions = {
 
 const ServiceCard = ({
   index,
-  title /*  icon  */,
+  title,
+  icon,
   content,
 }: {
   index: number;
   title: string;
+  icon: string;
   content: string[];
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -35,7 +37,7 @@ const ServiceCard = ({
       <ReactCardFlip isFlipped={isFlipped}>
         <motion.div
           variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card  bg-black "
+          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card white"
         >
           <div
             // @ts-expect-error wsh
@@ -50,21 +52,18 @@ const ServiceCard = ({
               setIsFlipped((prev) => !prev);
             }}
           >
-            {/*         <img
-          src={icon}
-          alt="web-development"
-          className="w-16 h-16 object-contain"
-        />
- */}
+            <img
+              src={icon}
+              alt="web-development"
+              className="w-16 h-16 object-contain color-white "
+            />
+
             <h3 className="text-white text-[20px] font-bold text-center">
               {title}
             </h3>
           </div>
         </motion.div>
-        <motion.div
-          variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-          className="green-pink-gradient p-[1px] rounded-[20px] shadow-card  bg-white"
-        >
+        <motion.div className="green-pink-gradient p-[1px] rounded-[20px] shadow-card  white">
           <div
             // @ts-expect-error wsh
             options={{
@@ -78,8 +77,9 @@ const ServiceCard = ({
               setIsFlipped((prev) => !prev);
             }}
           >
-            <h3 className="text text-[20px] font-bold text-center">
-              {content.join(", ")}
+            <p className="text-white"> Technologie : </p>
+            <h3 className="text-white text-[20px] font-bold text-center">
+              {content.join(" ")}
             </h3>
           </div>
         </motion.div>
