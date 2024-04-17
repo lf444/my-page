@@ -1,9 +1,8 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
 import { fadeIn } from "../utils/motion";
-import github from "../assets/github.png";
-import { projects } from "../utils/constant";
+import Tabs from "./Tabs";
+/* import { projects } from "../utils/constant";
 
 const ProjectCard = ({
   index,
@@ -72,7 +71,7 @@ const ProjectCard = ({
       </Tilt>
     </motion.div>
   );
-};
+}; */
 
 const Works = () => {
   return (
@@ -103,10 +102,13 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      {/*       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
+      </div> */}
+      <div className="mt-20 flex flex-wrap debug">
+        <Tabs />
       </div>
     </>
   );

@@ -5,38 +5,21 @@ import Navbar from "./components/Navbar";
 
 import Skill from "./components/Skil";
 import Works from "./components/Works";
+import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
-      <div className="pl-10 pt-5">
-        {/*
- 
-        <li>
-          <a href="https://twitter.com/wolfmefive" target="_blank">
-            {t("Twitter")}
-          </a>
-        </li>
-      
-        <li>
-          <a href="https://github.com/lf444" target="_blank">
-            github
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/fabien-lartin" target="_blank">
-            linkedin
-          </a>
-        </li>
-    
-        <li>lartin.fabien@gmail.com</li>
-      */}
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-        </div>
+      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <Navbar />
+      </div>
+      <div className="pl-10 pt-10">
+        <ScrollToTop />
         <About />
         <Experience />
         <Skill />
         <Works />
+        <Contact />
       </div>
     </BrowserRouter>
   );
