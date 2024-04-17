@@ -62,15 +62,4 @@ const Tab = ({ title, children }: { title: string; children: JSX.Element }) => {
   );
 };
 
-const TabsFull = () => {
-  const tabArray = [
-    { title: "Tab 1", content: <>test 1 </> },
-    { title: "Tab 2", content: <>test 2 </> },
-    { title: "Tab 3", content: <>test 3</> },
-    { title: "Tab 4", content: <>test 4</> },
-    { title: "Tab 5", content: <>test 5</> },
-  ];
-  return <Tabs tabs={tabArray} />;
-};
-
-export default TabsFull;
+export default Tabs;
