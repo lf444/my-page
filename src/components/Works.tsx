@@ -4,11 +4,11 @@ import { fadeIn } from "../utils/motion";
 import Tabs from "./Tabs";
 
 const tabArray: { title: string; content: JSX.Element }[] = [
-  { title: "Tab 1", content: <>test 1 </> },
-  { title: "Tab 2", content: <>test 2 </> },
-  { title: "Tab 3", content: <>test 3</> },
-  { title: "Tab 4", content: <>test 4</> },
-  { title: "Tab 5", content: <>test 5</> },
+  { title: "Where2Eat", content: <>test 1 </> },
+  { title: "PetClinic", content: <>test 2 </> },
+  { title: "LifePlanner", content: <>test 3</> },
+  { title: "RustTooling", content: <>test 4</> },
+  { title: "SolanaWars", content: <>test 5</> },
 ];
 
 /* import { projects } from "../utils/constant";
@@ -111,12 +111,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {/*       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div> */}
-      <div className="mt-20 flex flex-wrap debug">
+      <div className="mt-20 flex flex-wrap ">
         <Tabs tabs={tabArray} />
       </div>
     </>

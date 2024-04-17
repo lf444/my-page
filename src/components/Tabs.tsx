@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 const Tabs = ({
@@ -21,12 +22,14 @@ const Tabs = ({
 
   return (
     <div className="w-full mx-auto">
-      <div className="py-4">
-        {tabs.map((child) => {
+      <div className="py-4 ">
+        {tabs.map((child, index) => {
           if (child.title === activeTab) {
             return (
-              <div key={child.title}>
-                <Tab title={child.title}>{child.content}</Tab>
+              <div key={child.title} className="">
+                <Tab title={child.title} index={index}>
+                  {child.content}
+                </Tab>
               </div>
             );
           }
@@ -34,16 +37,24 @@ const Tabs = ({
         })}
       </div>
       <div className="w-full  flex justify-center">
-        <div className="flex border-b border-gray-300 ">
+        <div className="flex border-b border-gray-300 gap-7  bg-gray-400 rounded-full p-1">
           {tabs.map((child) => (
             <button
               key={child.title}
               className={`${
-                activeTab === child.title ? "border-b-2 border-purple-500" : ""
-              } flex-1 text-gray-700 font-medium py-2`}
+                activeTab === child.title ? "" : "hover:text-white/60"
+              } relative rounded-full px-3 py-1.5 text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
               onClick={(e) => handleClick(e, child.title)}
             >
-              {child.title}
+              {activeTab === child.title && (
+                <motion.span
+                  layoutId="bubble"
+                  className="absolute inset-0 z-10  bg-regal-test"
+                  style={{ borderRadius: 9999 }}
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+              <p className=" z-30 relative text-white">{child.title}</p>
             </button>
           ))}
         </div>
@@ -52,11 +63,28 @@ const Tabs = ({
   );
 };
 
-const Tab = ({ title, children }: { title: string; children: JSX.Element }) => {
+const Tab = ({
+  title,
+  index,
+  children,
+}: {
+  title: string;
+  index: number;
+  children: JSX.Element;
+}) => {
   return (
-    <div title={title}>
-      <div className="py-4">
-        <h2 className="text-lg font-medium mb-2">{children}</h2>
+    <div title={title} style={{ paddingLeft: `${index * 20}%` }}>
+      <div className={`py-4 `}>
+        <motion.div
+          animate={{ x: 10 }}
+          transition={{
+            ease: "linear",
+            duration: 2,
+            x: { duration: 1 },
+          }}
+        >
+          <h2 className={`text-lg font-medium mb-2  w-fit `}>{children}</h2>
+        </motion.div>
       </div>
     </div>
   );
