@@ -4,9 +4,9 @@ import Experience from "./components/Experience";
 import Navbar from "./components/Navbar";
 
 import Skill from "./components/Skil";
-import Works from "./components/Works";
+/* import Works from "./components/Works"; */
 import Contact from "./components/Contact";
-import ScrollToTop from "./components/ScrollToTop";
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,11 +14,10 @@ function App() {
         <Navbar />
       </div>
       <div className="pl-10 pt-10">
-        <ScrollToTop />
         <About />
         <Experience />
         <Skill />
-        <Works />
+        {/*      <Works /> */}
         <Contact />
       </div>
     </BrowserRouter>

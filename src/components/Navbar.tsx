@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 50) {
+      if (scrollTop > 30) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`w-full flex items-center py-4 fixed top-0 z-20 ${
         scrolled ? "bg-white" : "bg-transparent"
       }`}
     >
@@ -39,7 +39,6 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/*           <img src={logo} alt="logo" className="w-9 h-9 object-contain" /> */}
           <p className="text-black text-[18px] font-bold cursor-pointer flex ">
             Fabien &nbsp;
             <span className="sm:block hidden"> | Full-Stack developpeur</span>
@@ -51,7 +50,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-black" : "text-black"
+                active === nav.title ? "text-regal-test" : "text-black"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
@@ -60,14 +59,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
-          {/*      <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain"
-            onClick={() => setToggle(!toggle)}
-          />
- */}
+        <div className="sm:hidden flex flex-1 justify-end items-center debug">
           <div
             className={`${
               !toggle ? "hidden" : "flex"
@@ -78,14 +70,14 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-black" : "text-black"
+                    active === nav.title ? "text-regal-test" : "text-black"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {/*     <a href={`#${nav.id}`}>{nav.title}</a> */}
                 </li>
               ))}
             </ul>

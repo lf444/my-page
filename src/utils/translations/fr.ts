@@ -16,5 +16,5 @@ export const frTrad = {
     December: "Décembre",
   },
   Developer: "Développeur",
-  Twitter: "x, anciennement twitter",
+  Twitter: "",
 };

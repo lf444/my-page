@@ -54,8 +54,15 @@ const Experience = () => {
   return (
     <div className="sm:pb-16 pb-10">
       <motion.div>
+        <p
+          className={
+            "sm:text-[18px] text-[14px] text-black uppercase tracking-wider pt-8 text-center"
+          }
+        >
+          Ce que j'ai fait jusqu'à présent
+        </p>
         <h2
-          className={`font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}
+          className={`font-black md:text-[50px] sm:text-[50px] xs:text-[40px] text-[30px] text-center`}
         >
           Experience pro
         </h2>

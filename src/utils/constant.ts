@@ -23,12 +23,15 @@ export const experiences: ExperienceType[] = [
     iconBg: "#EEEEEE",
     date: `Mar 2021 - Oct 2022`,
     points: [
-      "Développement d’un front-end en React / Redux tableau de bord from scratch.",
-      "Évolution de L’IHM à l’aide de Figma et amélioration de l’expérience utilisateur.",
-      "Mise en place d’une stratégie de test unitaire sur les différentes fonctions et de test d’interface sur les formulaires.",
-      "Développement d’un back-end J2EE dédié à la livraison de commande.",
-      "Développement d’une application React Native à destination d’un kiosque .",
-      "Mise en place d’un déploiement continue à l’aide de GitLab CI/CD pour la mise en place de Bêta et de la production .",
+      "Migration d’une application React 15 à 16 permettant une évolution plus rapide du développement.",
+      "Réduction de la latence d’une application  via Redux  sur un front-end React.",
+      "Augmentation de la couverture de test de 50% ( unit / e2e ) produisant une réduction de la régression par 2.",
+      "Développer et déployer un tableau de bord en ReactJs from scratch pour permettre le suivis de différentes metric.",
+      "Développer un micro-service critique en JavaEE/Quarkus pour permettre à Popafood d’avoir sa propre pipeline de livraison via Stuart avec une intégration Kafka.",
+      "Mise en place d’une CI/CD Gitlab pour permettre la livraison continue d’une application React Native sur les stores permettent une intégration 100% fiable et automatisé.",
+      "Mise en place d’un système de gestion d’une flotte d’appareille Android propriétaire via Google Cloud platform.",
+      "Création d'un front-end Reactjs pour configurer plus facilement une flotte d'appareils.",
+      "Intégration d'une solution de paiement avec une application React Native.",
     ],
   },
   {
@@ -38,11 +41,10 @@ export const experiences: ExperienceType[] = [
     iconBg: "#EEEEEE",
     date: `Jan 2023 - Nov 2023`,
     points: [
-      "Développement d’un front React / Redux from scratch.",
-      "Mise en place bonne pratique Front.",
-      "Encadrer et aider les développeurs plus juniors à monter en compétence sur React.",
-      "Mise en place d’une stratégie de test Front.",
-      "Évolution d’application d’une solution existante.",
+      "Développer un front React / Redux from scratch pour permettre une transition vers une nouvelle version.",
+      "Définition d’une stratégie de test contre la régression.",
+      "Encadrer et aider les développeurs plus juniors à monter en compétence sur la partie Front-end.",
+      "Comprendre, restituer & améliorer un besoin existant vers une nouvelle solution.",
     ],
   },
   {
@@ -53,9 +55,9 @@ export const experiences: ExperienceType[] = [
     date: `Nov 2023 - Mar 2024`,
     points: [
       "Développement d’un Front React / Redux.",
-      "Développement d'un Back-end Node en Nestjs.",
+      "Création d’un back-end Node en Nestjs pour permettre la collection de métriques.",
       "Écriture test unitaire Front-end/ Back-End.",
-      "Accompagnement de développeurs juniors.",
+      "Accompagnement de développeurs juniors sur la montée en compétence.",
     ],
   },
 ];
@@ -109,13 +111,13 @@ export const projects = [
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Introduction",
   },
-  { id: "skill", title: "skill" },
-  {
+  { id: "skill", title: "Compétences" },
+  /*   {
     id: "work",
-    title: "Work",
-  },
+    title: "Projets",
+  }, */
   {
     id: "contact",
     title: "Contact",
