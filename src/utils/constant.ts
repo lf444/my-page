@@ -71,7 +71,7 @@ export const services = [
   {
     title: "Back end Developer",
     icon: mobile,
-    content: ["Nestjs", "Java", "Kafka", "PostgreSQL", "MongoDB"],
+    content: ["Nestjs", "Java", "Kafka", "PostgreSQL", "Golang", "Rust"],
   },
   {
     title: "Mobile Developer",
