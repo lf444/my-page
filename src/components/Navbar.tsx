@@ -30,7 +30,7 @@ const Navbar = () => {
         scrolled ? "bg-white" : "bg-transparent"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center   pl-16 pr-16 mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -59,7 +59,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center debug">
+        <div className="sm:hidden flex flex-1 justify-end items-center ">
           <div
             className={`${
               !toggle ? "hidden" : "flex"

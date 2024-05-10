@@ -77,7 +77,6 @@ const ServiceCard = ({
               setIsFlipped((prev) => !prev);
             }}
           >
-            <p className="text-white"> Technologie : </p>
             <h3 className="text-white text-[20px] font-bold text-center">
               {content.join(" ")}
             </h3>
